@@ -18,15 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         question.addEventListener('click', () => {
+            faqItems.forEach(otherItem => {
+                if(otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = '0';
+                }
+            });
             item.classList.toggle('active');
             const answer = item.querySelector('.faq-answer');
-            const icon = question.querySelector('i');
             if (item.classList.contains('active')) {
                 answer.style.maxHeight = answer.scrollHeight + 'px';
-                icon.classList.replace('fa-plus', 'fa-minus');
             } else {
                 answer.style.maxHeight = '0';
-                icon.classList.replace('fa-minus', 'fa-plus');
             }
         });
     });

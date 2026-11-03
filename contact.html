@@ -2,7 +2,8 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f172a">
     <title>دیاکو - زیرساخت پایدار و امن شبکه</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,58 +19,67 @@
 	        d.getElementsByTagName("head")[0].appendChild(s);
 	    })();
 	</script>
+
 </head>
 <body>
     <div class="mobile-nav" id="mobileNav">
         <button class="mobile-nav-close" id="mobileNavClose"><i class="fas fa-times"></i></button>
         <ul class="mobile-nav-links">
-            <li><a href="index.html">خانه</a></li>
+            <li><a href="index.html">صفحه اصلی</a></li>
             <li><a href="features.html">امکانات شبکه</a></li>
-            <li><a href="pricing.html">پلن‌ها و تعرفه‌ها</a></li>
-            <li><a href="faq.html">سوالات متداول</a></li>
+            <li><a href="pricing.html">تعرفه سرویس‌ها</a></li>
+            <li><a href="testimonials.html">نظرات مشتریان</a></li>
             <li><a href="contact.html">تماس با ما</a></li>
         </ul>
+        <button onclick="$crisp.push(['do', 'chat:toggle']); return false;" class="login-btn">مشاوره و تست رایگان</button>
     </div>
+
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="logo"><i class="fas fa-shield-alt"></i> دیاکو</a>
+                <!-- LOGO UPDATED WITH IMAGE -->
+                <a href="index.html" class="logo">
+                    <img src="default-dark.png" alt="دیاکو وی‌پی‌ان">
+                </a>
+                
                 <ul class="nav-links">
-                    <li><a href="index.html">خانه</a></li>
-                    <li><a href="features.html">امکانات شبکه</a></li>
+                    <li><a href="index.html">صفحه اصلی</a></li>
                     <li><a href="pricing.html">تعرفه‌ها</a></li>
-                    <li><a href="faq.html">سوالات متداول</a></li>
-                    <li><a href="contact.html">تماس و پشتیبانی</a></li>
+                    <li><a href="features.html">امکانات</a></li>
+                    <li><a href="testimonials.html">نظرات کاربران</a></li>
                 </ul>
+                <button onclick="$crisp.push(['do', 'chat:toggle']); return false;" class="login-btn">مشاوره و تست رایگان</button>
                 <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
             </nav>
         </div>
     </header>
 
-    <section class="section bg-light">
+    <section class="section">
         <div class="container">
             <h1 class="section-title">تماس و پشتیبانی</h1>
+            <p class="section-subtitle">تیم دیاکو همیشه در کنار شماست. سریع‌ترین راه ارتباطی را انتخاب کنید.</p>
             
-            <div class="page-content" style="text-align: center;">
-                <div class="feature-icon" style="width: 90px; height: 90px; font-size: 2.5rem; margin-bottom: 30px;">
-                    <i class="fas fa-headset"></i>
+            <div class="contact-wrapper" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto; text-align: center;">
+                <div class="contact-info">
+                    <h3 style="font-size: 2.2rem; color: #fff; margin-bottom: 20px;">چت آنلاین سریع (پیشنهاد ما)</h3>
+                    <p style="margin-bottom: 40px;">برای دریافت مشاوره پیش از خرید، فعال‌سازی اکانت تست رایگان، یا حل مشکلات فنی، کارشناسان ما به صورت آنلاین در وب‌سایت آماده پاسخگویی به شما هستند.</p>
+                    
+                    <div class="contact-methods" style="max-width: 400px; margin: 0 auto;">
+                        <button onclick="$crisp.push(['do', 'chat:toggle']); return false;" class="contact-btn btn-crisp" style="padding: 20px; font-size: 1.2rem;">
+                            <i class="fas fa-comments"></i> شروع چت آنلاین
+                        </button>
+                        
+                        <div style="margin: 30px 0; color: var(--border-light); display: flex; align-items: center;">
+                            <hr style="flex: 1; border-color: var(--border-light);">
+                            <span style="padding: 0 15px; color: var(--text-muted);">یا</span>
+                            <hr style="flex: 1; border-color: var(--border-light);">
+                        </div>
+
+                        <a href="https://t.me/diyakovpn" target="_blank" class="contact-btn btn-telegram">
+                            <i class="fab fa-telegram-plane"></i> ارتباط در پشتیبانی تلگرام
+                        </a>
+                    </div>
                 </div>
-                <h2>ما همیشه در کنار شما هستیم</h2>
-                <p>تیم پشتیبانی فنی دیاکو به صورت ۲۴ ساعته و در تمام روزهای هفته آماده پاسخگویی به سوالات، ارائه مشاوره پیش از خرید و حل مشکلات فنی شماست.</p>
-                
-                <div style="margin: 40px 0;">
-                    <a href="#" onclick="$crisp.push(['do', 'chat:toggle']); return false;" class="cta-button main-cta" style="font-size: 1.1rem;">
-                        <i class="fas fa-comments"></i> شروع چت آنلاین با پشتیبانی
-                    </a>
-                </div>
-                
-                <hr style="border: 0; border-top: 1px solid var(--border-light); margin: 30px 0;">
-                
-                <h3>سایر راه‌های ارتباطی</h3>
-                <p style="margin-top: 15px;">
-                    <strong>ایمیل امور فنی:</strong> support@diyako.net<br>
-                    <strong>ایمیل امور مالی:</strong> billing@diyako.net
-                </p>
             </div>
         </div>
     </section>
@@ -78,28 +88,28 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>درباره دیاکو</h3>
-                    <p>دیاکو ارائه‌دهنده‌ای مطمئن در زمینه زیرساخت‌های اتصال امن ابری با سرورهای پرسرعت و پایدار برای توسعه‌دهندگان، فریلنسرها و کسب‌وکارها می‌باشد.</p>
+                    <img src="default-dark.png" alt="دیاکو" style="height: 40px; margin-bottom: 20px;">
+                    <p style="color: var(--text-muted); line-height: 1.8; font-size: 0.95rem;">دیاکو ارائه‌دهنده‌ای مطمئن در زمینه زیرساخت‌های اتصال امن ابری با سرورهای پرسرعت و پایدار برای توسعه‌دهندگان، فریلنسرها و استفاده از هوش مصنوعی می‌باشد.</p>
                 </div>
                 <div class="footer-column">
                     <h3>دسترسی سریع</h3>
                     <ul class="footer-links">
-                        <li><a href="features.html"><i class="fas fa-server"></i> امکانات شبکه</a></li>
-                        <li><a href="pricing.html"><i class="fas fa-tags"></i> تعرفه‌ها و اشتراک</a></li>
-                        <li><a href="faq.html"><i class="fas fa-question-circle"></i> سوالات متداول</a></li>
-                        <li><a href="terms.html"><i class="fas fa-file-alt"></i> قوانین و مقررات (ToS)</a></li>
+                        <li><a href="features.html"><i class="fas fa-chevron-left"></i> امکانات و تکنولوژی</a></li>
+                        <li><a href="pricing.html"><i class="fas fa-chevron-left"></i> تعرفه‌ها و اشتراک</a></li>
+                        <li><a href="testimonials.html"><i class="fas fa-chevron-left"></i> نظرات مشتریان</a></li>
+                        <li><a href="terms.html"><i class="fas fa-chevron-left"></i> قوانین و مقررات</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>ارتباط با ما</h3>
                     <ul class="footer-links">
-                        <li><a href="contact.html"><i class="fas fa-headset"></i> پشتیبانی آنلاین</a></li>
-                        <li><a href="mailto:support@diyako.net"><i class="fas fa-envelope"></i> ایمیل پشتیبانی</a></li>
+                        <li><a href="https://t.me/diyakovpn" target="_blank"><i class="fab fa-telegram"></i> کانال تلگرام دیاکو</a></li>
+                        <li><a href="#" onclick="$crisp.push(['do', 'chat:toggle']); return false;"><i class="fas fa-comments"></i> چت آنلاین با پشتیبانی</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>تمامی حقوق برای دیاکو محفوظ است. استفاده غیرمجاز پیگرد قانونی دارد.</p>
+                <p>تمامی حقوق برای دیاکو محفوظ است. طراحی شده برای تجربه‌ای امن و پایدار.</p>
             </div>
         </div>
     </footer>

@@ -2,7 +2,8 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f172a">
     <title>دیاکو - زیرساخت پایدار و امن شبکه</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,60 +19,166 @@
 	        d.getElementsByTagName("head")[0].appendChild(s);
 	    })();
 	</script>
+
 </head>
 <body>
     <div class="mobile-nav" id="mobileNav">
         <button class="mobile-nav-close" id="mobileNavClose"><i class="fas fa-times"></i></button>
         <ul class="mobile-nav-links">
-            <li><a href="index.html">خانه</a></li>
+            <li><a href="index.html">صفحه اصلی</a></li>
             <li><a href="features.html">امکانات شبکه</a></li>
-            <li><a href="pricing.html">پلن‌ها و تعرفه‌ها</a></li>
-            <li><a href="faq.html">سوالات متداول</a></li>
+            <li><a href="pricing.html">تعرفه سرویس‌ها</a></li>
+            <li><a href="testimonials.html">نظرات مشتریان</a></li>
             <li><a href="contact.html">تماس با ما</a></li>
         </ul>
+        <button onclick="$crisp.push(['do', 'chat:toggle']); return false;" class="login-btn">مشاوره و تست رایگان</button>
     </div>
+
     <header>
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="logo"><i class="fas fa-shield-alt"></i> دیاکو</a>
+                <!-- LOGO UPDATED WITH IMAGE -->
+                <a href="index.html" class="logo">
+                    <img src="default-dark.png" alt="دیاکو وی‌پی‌ان">
+                </a>
+                
                 <ul class="nav-links">
-                    <li><a href="index.html">خانه</a></li>
-                    <li><a href="features.html">امکانات شبکه</a></li>
+                    <li><a href="index.html">صفحه اصلی</a></li>
                     <li><a href="pricing.html">تعرفه‌ها</a></li>
-                    <li><a href="faq.html">سوالات متداول</a></li>
-                    <li><a href="contact.html">تماس و پشتیبانی</a></li>
+                    <li><a href="features.html">امکانات</a></li>
+                    <li><a href="testimonials.html">نظرات کاربران</a></li>
                 </ul>
+                <button onclick="$crisp.push(['do', 'chat:toggle']); return false;" class="login-btn">مشاوره و تست رایگان</button>
                 <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <div class="container">
-            <h1><span class="text-primary">پایداری و امنیت</span> در دنیای وب!</h1>
-            <p>با زیرساخت شبکه خصوصی دیاکو، به اینترنتی پایدار، ایمن و با پینگ پایین دست پیدا کنید. انتخابی ایده‌آل برای فریلنسرها، توسعه‌دهندگان و ارتباطات بین‌المللی با تضمین حفظ حریم خصوصی.</p>
-            <a href="contact.html" class="cta-button main-cta">دریافت مشاوره و تست سرویس</a>
+        <div class="container animate-on-load">
+            <h1>سرویس‌های دیاکو، قدرتمند و همیشه در دسترس<br>با سرویس‌های ما، <span class="highlight">فقط چند کلیک</span> تا جهان آزاد فاصله دارید</h1>
+            <p>زیرساخت شبکه خصوصی با پینگ پایین و پایداری بالا. انتخابی بی‌نظیر برای فریلنسرها، تریدرها، توسعه‌دهندگان و استفاده بی‌وقفه از پلتفرم‌های هوش مصنوعی.</p>
+            <button onclick="$crisp.push(['do', 'chat:toggle']); return false;" class="cta-button" style="padding: 15px 40px; font-size: 1.1rem;">
+                <i class="fas fa-comments"></i> مشاوره و تست رایگان
+            </button>
         </div>
     </section>
 
-    <section class="section bg-light">
+    <!-- NEW TRUST & SECURITY SECTION -->
+    <section class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">امنیت و حریم خصوصی در بالاترین سطح</h2>
+            <p class="section-subtitle">ما به حریم خصوصی شما احترام می‌گذاریم و از پیشرفته‌ترین تکنولوژی‌ها برای محافظت از آن استفاده می‌کنیم.</p>
+            
+            <div class="grid-4">
+                <div class="trust-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>رمزنگاری AES-256</h4>
+                    <p>داده‌های شما با پیشرفته‌ترین استاندارد نظامی، ایمن و غیرقابل نفوذ می‌شوند.</p>
+                </div>
+                <div class="trust-card">
+                    <i class="fas fa-user-secret"></i>
+                    <h4>بدون لاگ مرور (No-Log)</h4>
+                    <p>هیچ‌گونه اطلاعاتی از فعالیت‌ها و سابقه مرور شما در سرورهای ما ذخیره نمی‌شود.</p>
+                </div>
+                <div class="trust-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h4>ضمانت بازگشت وجه</h4>
+                    <p>در صورت نارضایتی از کیفیت و پایداری، وجه شما بدون قید و شرط بازگردانده می‌شود.</p>
+                </div>
+                <div class="trust-card">
+                    <i class="fas fa-headset"></i>
+                    <h4>پشتیبانی ۲۴ ساعته</h4>
+                    <p>تیم متخصص ما در هر ساعت از شبانه‌روز آماده پاسخگویی و رفع مشکلات شماست.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
         <div class="container">
             <h2 class="section-title">چرا زیرساخت شبکه دیاکو؟</h2>
+            <p class="section-subtitle">کیفیت، امنیت و پایداری؛ تضمین ما برای ارتباطات شما</p>
             <div class="grid-3">
                 <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-globe"></i></div>
-                    <h3>دسترسی بین‌المللی پایدار</h3>
-                    <p>اتصال به سرورهای بهینه‌شده در ۶ کشور مختلف با روتینگ هوشمند جهت داشتن کمترین تاخیر در ارتباطات شبکه.</p>
+                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>سرعت و پایداری بی‌نظیر</h3>
+                    <p>اتصال به سرورهای بهینه‌شده در چندین کشور مختلف با روتینگ هوشمند جهت داشتن کمترین تاخیر در ارتباطات شبکه و ترید.</p>
                 </div>
+                
                 <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-lock"></i></div>
-                    <h3>حریم خصوصی و رمزنگاری</h3>
-                    <p>ترافیک مصرفی شما به صورت کامل رمزنگاری می‌شود تا از سرقت اطلاعات در شبکه‌های عمومی و وای‌فای جلوگیری شود.</p>
+                    <div class="feature-icon"><i class="fas fa-laptop-mobile"></i></div>
+                    <h3>پشتیبانی از تمامی پلتفرم‌ها</h3>
+                    <p>نصب آسان بدون نیاز به دانش فنی. قابل استفاده بر روی ویندوز، مک، لینوکس، اندروید و iOS.</p>
+                    <div class="platform-icons">
+                        <i class="fab fa-windows"></i>
+                        <i class="fab fa-apple"></i>
+                        <i class="fab fa-android"></i>
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <div class="protocol-tags">
+                        <span class="protocol-tag">OpenVPN</span>
+                        <span class="protocol-tag">Cisco</span>
+                        <span class="protocol-tag">IKEv2</span>
+                        <span class="protocol-tag">L2TP</span>
+                    </div>
                 </div>
+
                 <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>پایداری برای متخصصان</h3>
-                    <p>ارائه آی‌پی ثابت و زیرساخت بدون قطعی، مناسب برای برگزاری جلسات آنلاین، ترید امن بین‌المللی و نیازهای توسعه‌دهندگان.</p>
+                    <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>آی‌پی ثابت و اختصاصی</h3>
+                    <p>ارائه آی‌پی کاملا ثابت (Static) مناسب برای فعالیت‌های حساس بین‌المللی، صرافی‌ها و حفظ هویت دیجیتال پایدار.</p>
+                </div>
+            </div>
+
+            <!-- AI SECTION -->
+            <div class="ai-section">
+                <h2 style="color: #fff; font-size: 2rem; margin-bottom: 15px;">بهینه‌سازی شده برای هوش مصنوعی</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin: 0 auto;">آیا سرویس‌های دیاکو برای اتصال به پلتفرم‌های هوش مصنوعی جوابگو هستند؟<br><strong style="color: #fff;">بله!</strong> سرویس‌های دیاکو با استفاده از متدهای پیشرفته، آی‌پی سرورها را به صورت اختصاصی برای استفاده بدون محدودیت و قطعی از سرویس‌های هوش مصنوعی بهینه کرده است.</p>
+                
+                <div class="ai-logos">
+                    <div class="ai-badge"><i class="fas fa-robot"></i> ChatGPT</div>
+                    <div class="ai-badge"><i class="fas fa-brain"></i> Gemini</div>
+                    <div class="ai-badge"><i class="fas fa-code"></i> GitHub Copilot</div>
+                    <div class="ai-badge"><i class="fas fa-project-diagram"></i> Google Flow</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ MOVED TO INDEX -->
+    <section class="section bg-darker" id="faq">
+        <div class="container">
+            <h2 class="section-title">سوالات متداول</h2>
+            <p class="section-subtitle">پاسخ به سوالات پرتکرار شما در مورد دیاکو</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>آیا سرویس‌های دیاکو برای اتصال به پلتفرم‌های هوش مصنوعی جوابگو هستند؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>بله، سرویس‌های دیاکو با استفاده از متدهایی آی‌پی سرورها را برای استفاده از هوش مصنوعی مانند Chatgpt ، Gemini ، Google flow و غیره بهینه کرده است تا بدون مشکل Access Denied از آن‌ها استفاده کنید.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>این سرویس روی چه دستگاه‌ها و پلتفرم‌هایی قابل استفاده است؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>زیرساخت ما با پروتکل‌های استاندارد صنعتی نظیر OpenVPN, Cisco, Ikev2, L2tp, Sstp و pptp ارائه می‌شوند و روی سیستم‌عامل‌های ویندوز، مک، لینوکس، اندروید و iOS بدون نیاز به دانش فنی قابل تنظیم است.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>آیا قبل از خرید امکان تست سرویس وجود دارد؟</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>بله حتماً. شما می‌توانید با کلیک روی دکمه چت آنلاین یا پیام به تلگرام پشتیبانی، اکانت تست رایگان دریافت کنید تا از کیفیت و پینگ سرویس روی اینترنت خود مطمئن شوید.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,28 +188,28 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>درباره دیاکو</h3>
-                    <p>دیاکو ارائه‌دهنده‌ای مطمئن در زمینه زیرساخت‌های اتصال امن ابری با سرورهای پرسرعت و پایدار برای توسعه‌دهندگان، فریلنسرها و کسب‌وکارها می‌باشد.</p>
+                    <img src="default-dark.png" alt="دیاکو" style="height: 40px; margin-bottom: 20px;">
+                    <p style="color: var(--text-muted); line-height: 1.8; font-size: 0.95rem;">دیاکو ارائه‌دهنده‌ای مطمئن در زمینه زیرساخت‌های اتصال امن ابری با سرورهای پرسرعت و پایدار برای توسعه‌دهندگان، فریلنسرها و استفاده از هوش مصنوعی می‌باشد.</p>
                 </div>
                 <div class="footer-column">
                     <h3>دسترسی سریع</h3>
                     <ul class="footer-links">
-                        <li><a href="features.html"><i class="fas fa-server"></i> امکانات شبکه</a></li>
-                        <li><a href="pricing.html"><i class="fas fa-tags"></i> تعرفه‌ها و اشتراک</a></li>
-                        <li><a href="faq.html"><i class="fas fa-question-circle"></i> سوالات متداول</a></li>
-                        <li><a href="terms.html"><i class="fas fa-file-alt"></i> قوانین و مقررات (ToS)</a></li>
+                        <li><a href="features.html"><i class="fas fa-chevron-left"></i> امکانات و تکنولوژی</a></li>
+                        <li><a href="pricing.html"><i class="fas fa-chevron-left"></i> تعرفه‌ها و اشتراک</a></li>
+                        <li><a href="testimonials.html"><i class="fas fa-chevron-left"></i> نظرات مشتریان</a></li>
+                        <li><a href="terms.html"><i class="fas fa-chevron-left"></i> قوانین و مقررات</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>ارتباط با ما</h3>
                     <ul class="footer-links">
-                        <li><a href="contact.html"><i class="fas fa-headset"></i> پشتیبانی آنلاین</a></li>
-                        <li><a href="mailto:support@diyako.net"><i class="fas fa-envelope"></i> ایمیل پشتیبانی</a></li>
+                        <li><a href="https://t.me/diyakovpn" target="_blank"><i class="fab fa-telegram"></i> کانال تلگرام دیاکو</a></li>
+                        <li><a href="#" onclick="$crisp.push(['do', 'chat:toggle']); return false;"><i class="fas fa-comments"></i> چت آنلاین با پشتیبانی</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>تمامی حقوق برای دیاکو محفوظ است. استفاده غیرمجاز پیگرد قانونی دارد.</p>
+                <p>تمامی حقوق برای دیاکو محفوظ است. طراحی شده برای تجربه‌ای امن و پایدار.</p>
             </div>
         </div>
     </footer>
